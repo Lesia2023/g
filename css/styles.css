@@ -153,7 +153,7 @@ gap: 30px;
    
 .link-list:hover,
 .link-list:focus{
-    color: var(--accent-lin-color)
+    color: var(--accent-lin-color);
 
 }
 .link-list.current{
@@ -174,7 +174,7 @@ gap: 30px;
     display: flex;
     align-items: center;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 0ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
      
    
@@ -203,7 +203,8 @@ gap: 30px;
 /*Поінтери*/
 
 
-.link-list::after{
+.link-list.current::after{
+position: absolute;
 display: block;
 content: "";
 width: 48px;
@@ -212,8 +213,7 @@ background-color: #2196f3;
 border-radius: 2px;
 margin-left: auto;
 margin-right: auto;
-margin-top: 11px;
-
+margin-top: 28px;
 
 }
 
